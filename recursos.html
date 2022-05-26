@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Mercadona</title>
+    <meta name="theme-color" content="#010101" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/merc-1.png" />
+</head>
+<body>
+    <img src="assets/merc-logo-header.png" class="toplogo" />
+    <nav><img src="assets/merc-logo.png" /><span>Parking</span></nav>
+
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.html">< Ir atr&aacute;s</a>
+
+    <div class="hero">
+        <h1>Recursos</h1>
+    </div>
+
+    <div style="margin-left:20px">
+        <strong>Electr&oacute;nica</strong>
+        <ul>
+            <li>1x Placa Arduino UNO</li>
+            <li>1x Protoboard</li>
+            <li>1x Display LCD (I2C-16x2)</li>
+            <li>5x Sensores de ultrasonidos</li>
+            <li>2x Servo motores (180&deg;)</li>
+            <li>3x LEDs</li>
+        </ul>
+        <strong>Programaci&oacute;n</strong>
+        <ul>
+            <li>Arduino IDE & Visualino</li>
+            <li>Lenguaje C adaptado a Arduino</li>
+            <li>Librer&iacute;a "LiquidCrystal_I2C"</li>
+        </ul>
+        <strong>Maquetismo</strong>
+        <ul>
+            <li>L&aacute;minas de "madera-carton" y metacrilato, cortadas a mano y con cortadora l&aacute;ser</li>
+        </ul>
+        <strong>Acerca del display</strong>
+        <p>
+            El display de 16 segmentos y 2 líneas funciona usando el protocolo
+            de comunicación "I2C", que requiere de 4 puertos: entrada de 5 voltios (+),
+            salida a tierra (GND/-), un bus o canal para el reloj y otro para los datos
+            enviados al display.
+            <br><br>
+            Se utiliza un adaptador I2C que resume los 16 pines del LCD, a los 4 pines
+            de la conexión I2C. Arduino por suerte soporta señales analógicas con
+            soporte para comunicaciones I2C, solo en los puertos A4 y A5 de la placa
+            Arduino UNO, que representan el SDA (canal de datos) y el SCL (canal de
+            sincronización reloj).
+        </p>
+        <strong>Acerca de la librer&iacute;a para el LCD</strong>
+        <p>
+            La librería usada en el LCD es una modificación de una librería que
+            el entorno de desarrollo (IDE) de Arduino ya integra por defecto.
+            La librería se puede descargar como un archivo comprimido (.zip), listo
+            para ser añadido al proyecto en el que se quiera usar.
+            <br><br>
+            <a href="https://www.arduinolibraries.info/libraries/liquid-crystal-i2-c">Clica para descargar librer&iacute;a</a>
+            <br><br>
+        </p>
+    </div>
+
+    <footer>&copy;&nbsp;JJE, Mayo 2022<br>P&aacute;gina web diseñada para m&oacute;viles</footer>
+</body>
+</html>
+<!--betawebsitethingnojoinplz.gdpshub.com-->

@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'Regular';
+    src: url('./fonts/Archivo-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Title';
+    src: url('./fonts/Archivo_Expanded-Black.ttf');
+}
+
+body {
+    margin: 0;
+    margin-top: 70px;
+    padding: 0;
+    font-family: 'Regular';
+    background-color: #333;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Title';
+}
+
+.toplogo {
+    position: absolute;
+    top: -10px; right: -10px;
+    height: 300px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, black, black, rgba(0, 0, 0, 0));
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    z-index: 99;
+}
+
+nav span {
+    font-family: 'Title';
+    font-size: 24px;
+    text-shadow: 2px 2px 10px #00a17b;
+}
+
+nav img {
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.hero {
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    animation: hh1-anim 3s ease-in-out infinite;
+}
+
+@keyframes hh1-anim {
+    0% {transform: translateY(-10px);}
+    50% {transform: translateY(10px);}
+    100% {transform: translateY(-10px);}
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b9ebdf;
+    color: black;
+    font-style: italic;
+    font-family: Helvetica;
+    text-align: center;
+    padding: 30px;
+    margin: 10px 15px 0 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.links {
+    width: calc(97vw - 40px);
+    padding: 20px;
+}
+
+.linkbox {
+    background-color: gray;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.linkbox:nth-child(1) {background-image: url('./assets/sc.jpg');}
+.linkbox:nth-child(2) {background-image: url('./assets/circuito.jpg');}
+
+.linkbox a, .scbtn {
+    background-color: black;
+    border: 2px solid #00000000;
+    box-shadow: 2px 2px 20px #1a4137;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 150ms;
+}
+
+.linkbox a:focus, .scbtn:focus {
+    background-color: #1a4137;
+    border: 2px solid #93cec0;
+}
+
+.collapsible {
+    background-color: #444;
+    color: #ccc;
+    cursor: pointer;
+    padding: 18px;
+    width: 80vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:focus {
+    background-color: #888;
+}
+
+.collapsible:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.collapsible:nth-child(3) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796";
+}
+
+.content {
+    width: calc(80vw - 36px);
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+pre {
+    background-color: #ccc;
+    margin: 0;
+    margin-left: -20px;
+    padding: 10px;
+    width: fit-content;
+}
+
+a {
+    background-color: #555;
+    border: 2px solid #00000000;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    transition: 150ms;
+}
+
+a:focus {
+    background-color: #1a4137;
+    border: 2px solid #93cec0;
+}
